@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入学号"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入姓名"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editMajor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入专业"
+        android:ems="10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="新增" />
+
+        <Button
+            android:id="@+id/btn_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_root"
+            android:text="查询" />
+
+        <EditText
+            android:id="@+id/editqur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_public"
+            android:layout_alignBottom="@+id/btn_public"
+            android:layout_toLeftOf="@+id/btn_public"
+            android:ems="10" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+         	android:layout_weight="1"
+            android:text="学号" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+          	android:layout_weight="1"
+            android:text="姓名" />
+
+        <TextView
+            android:id="@+id/textMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_weight="1"
+            android:text="专业" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
