@@ -2,6 +2,9 @@ package adapterAuto;
 import java.util.ArrayList;
 import java.util.HashMap;
 import com.julse.adapter.R;
+
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -107,7 +110,14 @@ public class MyAdapter extends BaseAdapter {
 			@Override
 			public void onClick(View view) {
 				// TODO Auto-generated method stub
-				Toast.makeText(context, "第"+i+"正在转发", Toast.LENGTH_SHORT).show();
+//				Toast.makeText(context, "第"+i+"正在转发", Toast.LENGTH_SHORT).show();
+				AlertDialog.Builder builder=new AlertDialog.Builder(context);
+				builder.setTitle("提示：");
+				builder.setIcon(android.R.drawable.alert_light_frame);
+				builder.setMessage("确认要转发么？");
+				builder.setPositiveButton("确认", null);
+				builder.setNegativeButton("取消", null);
+				builder.create().show();
 			}
 		});
 		holder.photo.setImageResource((Integer)map.get("head"));

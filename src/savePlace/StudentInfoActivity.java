@@ -181,8 +181,6 @@ public class StudentInfoActivity extends Activity {
 				}
 				else {
 					ArrayList qur_array=new ArrayList();
-					
-					
 					for (int i = 0; i < arrayList.size(); i++) {
 						HashMap map=new HashMap();
 						map=(HashMap)arrayList.get(i);
@@ -191,10 +189,7 @@ public class StudentInfoActivity extends Activity {
 						String major=map.get("Major").toString();
 						if (no.equals(qur)||name.equals(qur)||major.equals(qur)) {
 							qur_array.add(map);
-							
 						}
-						
-						
 					}
 					if (qur_array.isEmpty()) {
 						Toast.makeText(StudentInfoActivity.this, "查无此人", Toast.LENGTH_LONG).show();

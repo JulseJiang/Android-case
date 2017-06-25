@@ -46,25 +46,25 @@
             android:name="savePlace.StudentInfoActivity"
             android:label="@string/title_activity_student_info" >
 
-            <!--
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
+           
         </activity>
         <activity
             android:name="com.julse.adapter.AutoActivity"
             android:label="@string/title_activity_auto" >
 
-            <!--
-            <intent-filter>
+            
+           <!--  <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+            </intent-filter> -->
+           
         </activity>
         <activity
             android:name="timeToLive.LifeActivity"
@@ -82,13 +82,13 @@
             android:name="savePlace.LoginActivity"
             android:label="@string/title_activity_login" >
 
-            <!--
-            <intent-filter>
+            
+            <!-- <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
+            </intent-filter> -->
+           
         </activity>
         <activity
             android:name="savePlace.WelcomeActivity"
