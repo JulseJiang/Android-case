@@ -145,11 +145,11 @@
         <activity
             android:name="com.julse.adapter.CoverActivity"
             android:label="@string/title_activity_cover" >
-           <!--  <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>
         </activity>
         <activity
             android:name="mediaPlayer.MediaPlayerActivity"
@@ -165,11 +165,11 @@
         <activity
             android:name="webviewtest.WebViewActivity"
             android:label="@string/title_activity_web_view" >
-       		 <intent-filter>
+       <!-- 		 <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> -->
         
         </activity>
     </application>
